@@ -23,4 +23,4 @@ jobs:
       run: docker build . --file Dockerfile --tag arnautt/python-todo:$(date +%s)
 
     - name: Docker Push
-      run: docker push arnautt/python-todo
+      run: docker push arnautt/python-todo$(date +%s)
