@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>History list</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}"/>
+	<script src="{{ url_for('static', filename='js/default.js') }}"></script>
+</head>
+<body>
+
+
+<div class="container">
+	<table>
+		<thead>
+			<tr>
+				<th>CATEGORY</th>
+				<th>TODO</th>
+				<th>CREATED</th>
+				<th>ENDED</th>
+			</tr>
+		</thead>
+		<tbody>
+
+			{% for history in history_tasks %}
+			<tr>
+				<td>{{history.category}}</td>
+				<td>{{history.task}}</td>
+				<td>{{history.created}}</td>
+				<td>{{history.ended}}</td>
+			</tr>
+			{% endfor %}
+
+		</tbody>
+
+
+
+
+	</table>
+</div>
+
+
+
+<div class="container-btn">
+
+	<form action="{{ url_for('home') }}" method="get">
+	<button class="button">
+		<img src="{{url_for('static', filename='img/back.png')}}" style="mix-blend-mode: multiply;background:transparent;" width="40" height="35"/>
+	</button>
+	</form>
+
+</div>
+
+
+</body>
+</html>
