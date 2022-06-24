@@ -9,7 +9,19 @@ Simple TODO list application based on Flask & SQLite.
 
 ### Installation & Usage
 
-First, you must have Docker installed. Then, run the following commands :
+
+
+First, you must have Docker installed. Then, go to the path where you want the application files and clone the project:
+
+
+```bash
+cd my/application/path
+git clone git@github.com:Arnautt/python-todo.git
+cd python-todo
+```
+
+
+Then, run the following commands :
 
 ```bash
 sudo docker build -t my-image-name:latest .
