@@ -19,13 +19,17 @@ sudo docker run --name my-container-name my-image-name:latest
 
 
 This will both build the image and run the container. 
-If you have stopped the container, you can restart it by running the following command : 
+
+
+**Remarks:**
+
+- If you've stopped the container, you can restart it by running the following command : 
 
 ```bash
 sudo docker start my-container-name 
 ```
 
-If you want to stop the container or remove it, run :
+- If you want to stop the container or remove it, run :
 
 ```bash
 sudo docker stop my-container-name 
