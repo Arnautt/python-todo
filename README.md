@@ -2,9 +2,13 @@
 
 Simple TODO list application based on Flask & SQLite.
 
-![TODO](static/img/screenshot_1.png)
+<p align="center">
+  <img src="static/img/screenshot_1.png" width="700" height="450"/>
+</p>
 
-![History](static/img/screenshot_2.png)
+<p align="center">
+  <img src="static/img/screenshot_2.png" width="700" height="450"/>
+</p>
 
 
 ### Installation & Usage
